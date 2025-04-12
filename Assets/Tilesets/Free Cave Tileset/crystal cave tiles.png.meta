@@ -1,0 +1,2873 @@
+fileFormatVersion: 2
+guid: 1d5b68b791cdd534ca4b1f0a5541cecf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6347564648346934034
+    second: crystal cave tiles_0
+  - first:
+      213: -5672261840333624785
+    second: crystal cave tiles_1
+  - first:
+      213: 803124490998829263
+    second: crystal cave tiles_2
+  - first:
+      213: -5855639517513570692
+    second: crystal cave tiles_3
+  - first:
+      213: 2070820728898768344
+    second: crystal cave tiles_4
+  - first:
+      213: 8054008709251917717
+    second: crystal cave tiles_5
+  - first:
+      213: -5215442635435155430
+    second: crystal cave tiles_6
+  - first:
+      213: -2277462721968575888
+    second: crystal cave tiles_7
+  - first:
+      213: -1380554833733855593
+    second: crystal cave tiles_8
+  - first:
+      213: 970388545555296739
+    second: crystal cave tiles_9
+  - first:
+      213: -299812060418094854
+    second: crystal cave tiles_10
+  - first:
+      213: -1494872890330947127
+    second: crystal cave tiles_11
+  - first:
+      213: 7368455148006975192
+    second: crystal cave tiles_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crystal cave tiles_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bdb85ba64171850800000000000000
+      internalID: 6347564648346934034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a29edb8e31841b0800000000000000
+      internalID: -5672261840333624785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0d66c2875452b00800000000000000
+      internalID: 803124490998829263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c762dd122e69cbea0800000000000000
+      internalID: -5855639517513570692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc6833b780dbc10800000000000000
+      internalID: 2070820728898768344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597ecd4cf3695cf60800000000000000
+      internalID: 8054008709251917717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10e5704e860f97b0800000000000000
+      internalID: -5215442635435155430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a6edb88b3d460e0800000000000000
+      internalID: -2277462721968575888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796585671b847dce0800000000000000
+      internalID: -1380554833733855593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e17ee7ad33877d00800000000000000
+      internalID: 970388545555296739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c66ff48ad6dbf0800000000000000
+      internalID: -299812060418094854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c16673c605214be0800000000000000
+      internalID: -1494872890330947127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6aa58dae2024660800000000000000
+      internalID: 7368455148006975192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641960cd525db164ea08a58132165095
+      internalID: 1528256558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98d3adfc4f39b243b8e10145ae8ed3e
+      internalID: -1914075310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e39faee0d4dab04fabb20adabe7f504
+      internalID: 739855438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8545f8ee7c3b3c741a7ee9e942b4bfb6
+      internalID: 1576199502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5400596c875fd25439272922e66278a0
+      internalID: 1804324048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e9ec273f9c75946bc288b2f0dfc6cf
+      internalID: -1856597122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76005b32fe09674ca597e743c9e452d
+      internalID: -1854594322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a059493ff4366784cbc151e9b7e84024
+      internalID: 2061948330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444cc2700a54a334f90cb6ca88ea52e2
+      internalID: -1121754217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963fd8d1984dfb64a85925cd5e18750e
+      internalID: 2022053131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_23
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd028f3a8d1bbc4b8275cbad77a9837
+      internalID: -1262974262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e605f1f6b50fdb469fa3db8e52bef64
+      internalID: -1055632786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72a86537ca129347962124e489248df
+      internalID: 941009852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbffdfaef3e6fbc45a0c61383f162f5e
+      internalID: 1401810364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cbfbba74fce564b972a6d77214bccc
+      internalID: -1845822973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b443d8c270bd842890ff622946c02b
+      internalID: 1507100569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d1bd2636f8df74489a316cbbe4d006
+      internalID: -638171304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12b392c29e4894bb388ec90520a989
+      internalID: -1736979056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a81d895505332348b09ce589433dad2
+      internalID: 1795875129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f551288f8460c9439393c9d870b3b10
+      internalID: 88218301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c2d1eabd5015a45ab8c689268662b8
+      internalID: 510591692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e245d4e91ba2a4ca10e82a7cd93451
+      internalID: 2071565412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c72f24d2af5bd64fb2830b254a78ad2
+      internalID: -549974207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_36
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee92439ecc1f8d4dabc2fa3297fd90f
+      internalID: -317587819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a45a3e914e29144bb45e81a52b4143
+      internalID: -194357453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f84a2615987fc41aec541c18fc3efb
+      internalID: -127139111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dff744701ff344da1c21b15bdf6976
+      internalID: -595484813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a45012590fc5f489e90c34318ba939
+      internalID: 1040159223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_41
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c197a219223b4469cf52f9d0a872ea
+      internalID: -204950998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_42
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -15}
+        - {x: 15, y: -11}
+        - {x: 16, y: -10}
+        - {x: 16, y: -4}
+        - {x: 15, y: -3}
+        - {x: 9, y: -3}
+        - {x: 6, y: -6}
+        - {x: 6, y: -8}
+        - {x: 8, y: -10}
+        - {x: 4, y: -10}
+        - {x: 1, y: -13}
+        - {x: 1, y: -14}
+        - {x: 3, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 12907047ed60cf54796f6c3528fdd16a
+      internalID: 980935874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -1}
+        - {x: 11, y: 4}
+        - {x: 12, y: 5}
+        - {x: 12, y: 9}
+        - {x: 15, y: 10}
+        - {x: 16, y: 16}
+        - {x: -11, y: 16}
+        - {x: -11, y: 15}
+        - {x: -8, y: 11}
+        - {x: -7, y: 5}
+        - {x: -6, y: 4}
+        - {x: -6, y: 1}
+        - {x: -4, y: -1}
+        - {x: -1, y: 0}
+        - {x: 0, y: 3}
+        - {x: 0, y: 6}
+        - {x: 1, y: 7}
+        - {x: 2, y: 6}
+        - {x: 4, y: 7}
+        - {x: 5, y: 6}
+        - {x: 5, y: 3}
+        - {x: 8, y: -2}
+      tessellationDetail: 1
+      bones: []
+      spriteID: b9a8bfea57ca0fe408ca1037298e2b48
+      internalID: -1079590232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 10, y: -14}
+        - {x: 13, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: -8}
+        - {x: 12, y: -4}
+        - {x: 7, y: -4}
+        - {x: 4, y: -7}
+        - {x: 3, y: -6}
+        - {x: 0, y: -6}
+        - {x: -2, y: -4}
+        - {x: -7, y: -4}
+        - {x: -11, y: -8}
+        - {x: -11, y: -11}
+        - {x: -8, y: -14}
+        - {x: -5, y: -14}
+        - {x: -5, y: -16}
+        - {x: 10, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: dfb9499aa6d761144999a29d746ccd81
+      internalID: -132717216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -10}
+        - {x: 12, y: -10}
+        - {x: 14, y: -12}
+        - {x: 15, y: -12}
+        - {x: 16, y: -11}
+        - {x: 16, y: -5}
+        - {x: 15, y: -4}
+        - {x: 12, y: -5}
+        - {x: 11, y: -4}
+        - {x: 14, y: -2}
+        - {x: 16, y: -2}
+        - {x: 16, y: 10}
+        - {x: 14, y: 10}
+        - {x: 14, y: 13}
+        - {x: 11, y: 16}
+        - {x: 8, y: 16}
+        - {x: 4, y: 12}
+        - {x: 4, y: 7}
+        - {x: 7, y: 4}
+        - {x: 6, y: 3}
+        - {x: 6, y: 0}
+        - {x: 9, y: -3}
+        - {x: 4, y: -3}
+        - {x: 1, y: -6}
+        - {x: 1, y: -8}
+        - {x: 3, y: -10}
+        - {x: 1, y: -10}
+        - {x: -2, y: -13}
+        - {x: -2, y: -14}
+        - {x: 0, y: -16}
+        - {x: 12, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 6877bd57b1247d54694859d0d34c760f
+      internalID: 540100262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0970886f2ca784943b805ccc9a9c82a7
+      internalID: 959200044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 11, y: -12}
+        - {x: 7, y: -9}
+        - {x: 7, y: -6}
+        - {x: 6, y: -5}
+        - {x: 6, y: 5}
+        - {x: 3, y: 9}
+        - {x: 3, y: 11}
+        - {x: -1, y: 15}
+        - {x: -3, y: 15}
+        - {x: -10, y: 8}
+        - {x: -13, y: -16}
+        - {x: 12, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: cc8b8091de0aef947bfe856b887ac5e5
+      internalID: -237725238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8759703380c0d3041842615a79b8c2aa
+      internalID: -263511286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006b465d7896b8e40b60edf380e5cdfc
+      internalID: 2088992871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_50
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5259b189fadc6140aa15dccda8a90ed
+      internalID: -2097626480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 2, y: -14}
+        - {x: 4, y: -16}
+        - {x: 16, y: -16}
+        - {x: 15, y: -10}
+        - {x: 16, y: -9}
+        - {x: 16, y: -5}
+        - {x: 14, y: -3}
+        - {x: 8, y: -3}
+        - {x: 6, y: -5}
+        - {x: 5, y: -5}
+        - {x: 4, y: -4}
+        - {x: -1, y: -4}
+        - {x: -4, y: -7}
+        - {x: -5, y: -6}
+        - {x: -8, y: -6}
+        - {x: -12, y: -10}
+        - {x: -12, y: -13}
+        - {x: -10, y: -15}
+        - {x: -10, y: -16}
+        - {x: 2, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 3418feac654ad2f40a6f3472a6b4ea18
+      internalID: 994300371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_52
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -14}
+        - {x: 12, y: -13}
+        - {x: 9, y: -10}
+        - {x: 6, y: -10}
+        - {x: 4, y: -8}
+        - {x: 0, y: -8}
+        - {x: -1, y: -9}
+        - {x: -3, y: -8}
+        - {x: -6, y: -8}
+        - {x: -10, y: -12}
+        - {x: -10, y: -14}
+        - {x: -8, y: -16}
+        - {x: 10, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: ec1e33768b995754b99b128c6e8387d4
+      internalID: 1194499183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -15}
+        - {x: 9, y: -10}
+        - {x: 11, y: -8}
+        - {x: 11, y: -6}
+        - {x: 8, y: -3}
+        - {x: 2, y: -3}
+        - {x: -1, y: -6}
+        - {x: -1, y: -8}
+        - {x: 1, y: -10}
+        - {x: -3, y: -10}
+        - {x: -5, y: -12}
+        - {x: -7, y: -11}
+        - {x: -9, y: -11}
+        - {x: -14, y: -15}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 635d6506f9c97134eb0c7365892b16e9
+      internalID: 1731526767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -15}
+        - {x: -5, y: -12}
+        - {x: -4, y: -11}
+        - {x: -2, y: -14}
+        - {x: -2, y: -16}
+        - {x: 10, y: -16}
+        - {x: 10, y: -14}
+        - {x: 13, y: -14}
+        - {x: 16, y: -11}
+        - {x: 16, y: -8}
+        - {x: 12, y: -4}
+        - {x: 7, y: -4}
+        - {x: 4, y: -7}
+        - {x: 3, y: -6}
+        - {x: 0, y: -6}
+        - {x: -3, y: -9}
+        - {x: -3, y: -4}
+        - {x: -6, y: -1}
+        - {x: -8, y: -1}
+        - {x: -10, y: -3}
+        - {x: -10, y: -1}
+        - {x: -13, y: 2}
+        - {x: -14, y: 2}
+        - {x: -16, y: 0}
+        - {x: -16, y: -12}
+        - {x: -10, y: -11}
+        - {x: -10, y: -12}
+        - {x: -12, y: -14}
+        - {x: -12, y: -15}
+        - {x: -11, y: -16}
+        - {x: -5, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 43e4dd406df66c141a3f90a8b3c39654
+      internalID: -1911889964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f06f591301de44ab98c9d7338771da
+      internalID: 220490214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -15}
+        - {x: 11, y: -12}
+        - {x: 7, y: -11}
+        - {x: 4, y: -14}
+        - {x: 2, y: -12}
+        - {x: -4, y: -9}
+        - {x: -8, y: -9}
+        - {x: -14, y: -15}
+        - {x: -14, y: -16}
+        - {x: 14, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: e5988b9c8acea20448d6a8898f279913
+      internalID: -1390380526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -4}
+        - {x: 7, y: 2}
+        - {x: 1, y: 6}
+        - {x: -4, y: 4}
+        - {x: -6, y: 1}
+        - {x: -4, y: -5}
+        - {x: -1, y: -7}
+        - {x: 2, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a703076d089c95044bc087bb8d76b699
+      internalID: -1946673794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6425c32e1394ffe468819a5ac83c87e1
+      internalID: 552918077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e96db6d6edf64e9c0fe91870f199a
+      internalID: 459019774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 12, y: -14}
+        - {x: 15, y: -9}
+        - {x: 15, y: -6}
+        - {x: 14, y: -5}
+        - {x: 14, y: -3}
+        - {x: 11, y: 0}
+        - {x: 10, y: 0}
+        - {x: 6, y: -4}
+        - {x: 5, y: -4}
+        - {x: 5, y: -1}
+        - {x: 4, y: 0}
+        - {x: 4, y: 3}
+        - {x: 3, y: 4}
+        - {x: 2, y: 11}
+        - {x: -2, y: 15}
+        - {x: -4, y: 15}
+        - {x: -9, y: 13}
+        - {x: -11, y: 10}
+        - {x: -11, y: 6}
+        - {x: -12, y: 5}
+        - {x: -12, y: -2}
+        - {x: -13, y: -3}
+        - {x: -13, y: -9}
+        - {x: -12, y: -10}
+        - {x: -12, y: -12}
+        - {x: -15, y: -15}
+        - {x: -15, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 45895bf1ac6a9f74d8c461ca2d2e4be9
+      internalID: 170473261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -13}
+        - {x: 14, y: -9}
+        - {x: 10, y: -5}
+        - {x: 7, y: -5}
+        - {x: 6, y: 1}
+        - {x: 1, y: 6}
+        - {x: -4, y: 7}
+        - {x: -8, y: 3}
+        - {x: -8, y: -1}
+        - {x: -9, y: -2}
+        - {x: -9, y: -4}
+        - {x: -8, y: -6}
+        - {x: -10, y: -9}
+        - {x: -10, y: -12}
+        - {x: -7, y: -16}
+        - {x: 13, y: -16}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 960c3acd7e7e99a4eae1874cca92292d
+      internalID: -421024136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -10}
+        - {x: 14, y: -6}
+        - {x: 11, y: -1}
+        - {x: 5, y: -5}
+        - {x: -1, y: 14}
+        - {x: -8, y: 12}
+        - {x: -11, y: 4}
+        - {x: -12, y: -7}
+        - {x: -15, y: -15}
+        - {x: -15, y: -16}
+        - {x: 10, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c57f1b367f87041a639448ba066403
+      internalID: -1333960005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 14, y: -9}
+        - {x: 12, y: -1}
+        - {x: 5, y: -4}
+        - {x: 0, y: 13}
+        - {x: -8, y: 13}
+        - {x: -11, y: 7}
+        - {x: -12, y: -11}
+        - {x: -10, y: -16}
+        - {x: 11, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba026253b0940b4982486d7f33e618a
+      internalID: -1478943165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 16, y: -6}
+        - {x: 10, y: 0}
+        - {x: 2, y: 6}
+        - {x: 0, y: 13}
+        - {x: -9, y: 13}
+        - {x: -12, y: -8}
+        - {x: -11, y: -16}
+        - {x: 16, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f030d45e8787e9c4389ff8a1b814e39b
+      internalID: 438277959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d51cd820d6f1842a27c907862b0f5c
+      internalID: 419391327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_66
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199bd30e363964748b565b9cfe69f1b2
+      internalID: -335704727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_67
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eda5958cd0fdc4ca5cbda0e6b5e515
+      internalID: -304255597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_68
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228ce7f3592f0f04497303e757fe02f5
+      internalID: -1768774914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f16543509052dc4584bcfed1fd4d23a
+      internalID: 243988781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_70
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1ad690f02c22d4f9570ac0341b4cd6
+      internalID: 2133735387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e11637ada1e604a81a07f96ba0dd97
+      internalID: -714770973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17be260c68433f468b7efdc564b233a
+      internalID: -1436884716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2479c09be6f98c4419f8d5aad1f6952a
+      internalID: 1126737964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9a85e3ad42f05439ff6a797c4d133a
+      internalID: 1260246333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd936453872dc74eab71f7a3f789cbf
+      internalID: -591727307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_76
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceafab36b0928f041ae28a5da705eda9
+      internalID: 1448095448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_77
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e88c0eb70f896a4db42c943dbbecbdf
+      internalID: 602024063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_78
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543eea4220ad5ed4cb621781908fc329
+      internalID: 1408578518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_79
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a5587db04c3c24281045723f7e7479
+      internalID: 1078219407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575468c94c6fe70488f70f2822ee6b33
+      internalID: 105463111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad715644744c9447b6293655eea40fc
+      internalID: -1322320247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2dd34b21ca57c64f8706b41e5387ffe
+      internalID: 538485349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6684a639ce6b7f46b109b8032cbbd24
+      internalID: -860492030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fa0f1277101e046a88dc94a187154d
+      internalID: -2079534616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598e89d60d332e642849ac6f284abe0b
+      internalID: -900936575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2cf2e35c2c6a145888f55b64220f6b
+      internalID: -917323250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc963303ff5519b4ba79ffb60155d4a0
+      internalID: 694611873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd7d74c0abb56b4aa14a2d167d547d2
+      internalID: -1185093191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5599cab068c195499587311ff7ba114
+      internalID: 534436552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9e416c9279dab45b6d96cdf05021db
+      internalID: 379005721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3066935eb1063fa4e84d0a51412dd92d
+      internalID: 69245454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_92
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c81d9d7ea5c7584082a889098f92ebe
+      internalID: -1644113198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa71860b1648924ca9e25e57b415cb5
+      internalID: 708344192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7912f0d7399e9f8499fe1f69d4d9e2d3
+      internalID: 804370944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8c31540d03c4c4590b7814c11b272b
+      internalID: 1454777016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a19e8e8e9251434f8265cdf1534e019
+      internalID: -1753612975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0461a5e67cb0b4396c73a91b3adf3e
+      internalID: -245240092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc720924867f6643a4d96a4e3dd4676
+      internalID: 538545032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82de8fa5caf2c25408023a5fbaccecad
+      internalID: -968410513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_100
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334fb0348a9749348b36ab1607ef7b44
+      internalID: 1697919743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_101
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e5451fce9288b4eaf61babbe3e7a68
+      internalID: -1941288446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_102
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e41225d06db334eb7a96da103e9ea3
+      internalID: -566247847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_103
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6666e4d38f5b8d14398eba9016115390
+      internalID: 705281544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_104
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386804fa81231784fbbcaca2db950033
+      internalID: -417765343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal cave tiles_105
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30eeeccd5bb3e86429ad18e3b653b8f8
+      internalID: -1680666253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c3c200f069f9ba24d962e8b8748fe59b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      crystal cave tiles_0: 6347564648346934034
+      crystal cave tiles_1: -5672261840333624785
+      crystal cave tiles_10: -299812060418094854
+      crystal cave tiles_100: 1697919743
+      crystal cave tiles_101: -1941288446
+      crystal cave tiles_102: -566247847
+      crystal cave tiles_103: 705281544
+      crystal cave tiles_104: -417765343
+      crystal cave tiles_105: -1680666253
+      crystal cave tiles_11: -1494872890330947127
+      crystal cave tiles_12: 7368455148006975192
+      crystal cave tiles_13: 1528256558
+      crystal cave tiles_14: -1914075310
+      crystal cave tiles_15: 739855438
+      crystal cave tiles_16: 1576199502
+      crystal cave tiles_17: 1804324048
+      crystal cave tiles_18: -1856597122
+      crystal cave tiles_19: -1854594322
+      crystal cave tiles_2: 803124490998829263
+      crystal cave tiles_20: 2061948330
+      crystal cave tiles_21: -1121754217
+      crystal cave tiles_22: 2022053131
+      crystal cave tiles_23: -1262974262
+      crystal cave tiles_24: -1055632786
+      crystal cave tiles_25: 941009852
+      crystal cave tiles_26: 1401810364
+      crystal cave tiles_27: -1845822973
+      crystal cave tiles_28: 1507100569
+      crystal cave tiles_29: -638171304
+      crystal cave tiles_3: -5855639517513570692
+      crystal cave tiles_30: -1736979056
+      crystal cave tiles_31: 1795875129
+      crystal cave tiles_32: 88218301
+      crystal cave tiles_33: 510591692
+      crystal cave tiles_34: 2071565412
+      crystal cave tiles_35: -549974207
+      crystal cave tiles_36: -317587819
+      crystal cave tiles_37: -194357453
+      crystal cave tiles_38: -127139111
+      crystal cave tiles_39: -595484813
+      crystal cave tiles_4: 2070820728898768344
+      crystal cave tiles_40: 1040159223
+      crystal cave tiles_41: -204950998
+      crystal cave tiles_42: 980935874
+      crystal cave tiles_43: -1079590232
+      crystal cave tiles_44: -132717216
+      crystal cave tiles_45: 540100262
+      crystal cave tiles_46: 959200044
+      crystal cave tiles_47: -237725238
+      crystal cave tiles_48: -263511286
+      crystal cave tiles_49: 2088992871
+      crystal cave tiles_5: 8054008709251917717
+      crystal cave tiles_50: -2097626480
+      crystal cave tiles_51: 994300371
+      crystal cave tiles_52: 1194499183
+      crystal cave tiles_53: 1731526767
+      crystal cave tiles_54: -1911889964
+      crystal cave tiles_55: 220490214
+      crystal cave tiles_56: -1390380526
+      crystal cave tiles_57: -1946673794
+      crystal cave tiles_58: 552918077
+      crystal cave tiles_59: 459019774
+      crystal cave tiles_6: -5215442635435155430
+      crystal cave tiles_60: 170473261
+      crystal cave tiles_61: -421024136
+      crystal cave tiles_62: -1333960005
+      crystal cave tiles_63: -1478943165
+      crystal cave tiles_64: 438277959
+      crystal cave tiles_65: 419391327
+      crystal cave tiles_66: -335704727
+      crystal cave tiles_67: -304255597
+      crystal cave tiles_68: -1768774914
+      crystal cave tiles_69: 243988781
+      crystal cave tiles_7: -2277462721968575888
+      crystal cave tiles_70: 2133735387
+      crystal cave tiles_71: -714770973
+      crystal cave tiles_72: -1436884716
+      crystal cave tiles_73: 1126737964
+      crystal cave tiles_74: 1260246333
+      crystal cave tiles_75: -591727307
+      crystal cave tiles_76: 1448095448
+      crystal cave tiles_77: 602024063
+      crystal cave tiles_78: 1408578518
+      crystal cave tiles_79: 1078219407
+      crystal cave tiles_8: -1380554833733855593
+      crystal cave tiles_80: 105463111
+      crystal cave tiles_81: -1322320247
+      crystal cave tiles_82: 538485349
+      crystal cave tiles_83: -860492030
+      crystal cave tiles_84: -2079534616
+      crystal cave tiles_85: -900936575
+      crystal cave tiles_86: -917323250
+      crystal cave tiles_87: 694611873
+      crystal cave tiles_88: -1185093191
+      crystal cave tiles_89: 534436552
+      crystal cave tiles_9: 970388545555296739
+      crystal cave tiles_90: 379005721
+      crystal cave tiles_91: 69245454
+      crystal cave tiles_92: -1644113198
+      crystal cave tiles_93: 708344192
+      crystal cave tiles_94: 804370944
+      crystal cave tiles_95: 1454777016
+      crystal cave tiles_96: -1753612975
+      crystal cave tiles_97: -245240092
+      crystal cave tiles_98: 538545032
+      crystal cave tiles_99: -968410513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
