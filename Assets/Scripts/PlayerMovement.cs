@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     //Next, drag it into the slot in playerMovement on your player
 
     public PlayerData Data;
+    public Animator animator;
 
     #region Variables
     //Components
@@ -173,9 +174,15 @@ public class PlayerMovement : MonoBehaviour
 
         #region SLIDE CHECKS
         if (CanSlide() && ((LastOnWallLeftTime > 0 && _moveInput.x < 0) || (LastOnWallRightTime > 0 && _moveInput.x > 0)))
+        {
             IsSliding = true;
+            animator.SetBool("isClinging", IsSliding);
+        }
         else
+        {
             IsSliding = false;
+            animator.SetBool("isClinging", IsSliding);
+        }
         #endregion
 
         #region GRAVITY
@@ -214,6 +221,7 @@ public class PlayerMovement : MonoBehaviour
             SetGravityScale(Data.gravityScale);
         }
         #endregion
+        animator.SetFloat("magnitude", RB.linearVelocity.magnitude);
     }
 
     private void FixedUpdate()
