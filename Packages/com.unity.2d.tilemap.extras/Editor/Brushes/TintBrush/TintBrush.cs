@@ -81,7 +81,9 @@ namespace UnityEditor.Tilemaps
         {
             get
             {
-                return GameObject.FindObjectsOfType<Tilemap>().Select(x => x.gameObject).ToArray();
+                return GameObject.FindObjectsByType<Tilemap>(FindObjectsInactive.Exclude, FindObjectsSortMode.None)
+                                 .Select(x => x.gameObject)
+                                 .ToArray();
             }
         }
     }

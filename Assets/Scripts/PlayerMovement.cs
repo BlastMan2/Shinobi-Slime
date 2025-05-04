@@ -30,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     public bool IsFacingRight { get; private set; }
     public bool IsJumping { get; private set; }
     public bool IsWallJumping { get; private set; }
+
+    public bool IsDashing { get; private set; }
     public bool IsSliding { get; private set; }
 
     //Timers (also all fields, could be private and a method returning a bool could be used)
@@ -46,8 +48,17 @@ public class PlayerMovement : MonoBehaviour
     private float _wallJumpStartTime;
     private int _lastWallJumpDir;
 
+    //Dash
+    private int _dashesLeft;
+    private bool _dashRefilling;
+    private Vector2 _lastDashDir;
+    private bool _isDashAttacking;
+
+    #region INPUT PARAMETERS
     private Vector2 _moveInput;
     public float LastPressedJumpTime { get; private set; }
+    public float LastPressedDashTime { get; private set; }
+    #endregion
 
     //Set all of these up in the inspector
     [Header("Checks")]
@@ -101,6 +112,12 @@ public class PlayerMovement : MonoBehaviour
         {
             OnJumpUpInput();
         }
+
+        if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
+        {
+            OnDashInput();
+        }
+
         #endregion
 
         #region COLLISION CHECKS
@@ -124,6 +141,29 @@ public class PlayerMovement : MonoBehaviour
 
             //Two checks needed for both left and right walls since whenever the play turns the wall checkPoints swap sides
             LastOnWallTime = Mathf.Max(LastOnWallLeftTime, LastOnWallRightTime);
+        }
+        #endregion
+
+        #region DASH CHECKS
+        if (CanDash() && LastPressedDashTime > 0)
+        {
+            //Freeze game for split second. Adds juiciness and a bit of forgiveness over directional input
+            Sleep(Data.dashSleepTime);
+
+            //If not direction pressed, dash forward
+            if (_moveInput != Vector2.zero)
+                _lastDashDir = _moveInput;
+            else
+                _lastDashDir = IsFacingRight ? Vector2.right : Vector2.left;
+
+
+
+            IsDashing = true;
+            IsJumping = false;
+            IsWallJumping = false;
+            _isJumpCut = false;
+
+            StartCoroutine(nameof(StartDash), _lastDashDir);
         }
         #endregion
 
@@ -249,6 +289,10 @@ public class PlayerMovement : MonoBehaviour
         if (CanJumpCut() || CanWallJumpCut())
             _isJumpCut = true;
     }
+    public void OnDashInput()
+    {
+        LastPressedDashTime = Data.dashInputBufferTime;
+    }
     #endregion
 
     #region GENERAL METHODS
@@ -256,6 +300,21 @@ public class PlayerMovement : MonoBehaviour
     {
         RB.gravityScale = scale;
     }
+
+    private void Sleep(float duration)
+    {
+        //Method used so we don't need to call StartCoroutine everywhere
+        //nameof() notation means we don't need to input a string directly.
+        //Removes chance of spelling mistakes and will improve error messages if any
+        StartCoroutine(nameof(PerformSleep), duration);
+    }
+    private IEnumerator PerformSleep(float duration)
+    {
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(duration); //Must be Realtime since timeScale with be 0 
+        Time.timeScale = 1;
+    }
+
     #endregion
 
     //MOVEMENT METHODS
@@ -368,6 +427,60 @@ public class PlayerMovement : MonoBehaviour
     }
     #endregion
 
+    #region DASH METHODS
+    //Dash Coroutine
+    private IEnumerator StartDash(Vector2 dir)
+    {
+        //Overall this method of dashing aims to mimic Celeste, if you're looking for
+        // a more physics-based approach try a method similar to that used in the jump
+
+        LastOnGroundTime = 0;
+        LastPressedDashTime = 0;
+
+        float startTime = Time.time;
+
+        _dashesLeft--;
+        _isDashAttacking = true;
+
+        SetGravityScale(0);
+
+        //We keep the player's velocity at the dash speed during the "attack" phase (in celeste the first 0.15s)
+        while (Time.time - startTime <= Data.dashAttackTime)
+        {
+            RB.linearVelocity = dir.normalized * Data.dashSpeed;
+            //Pauses the loop until the next frame, creating something of a Update loop. 
+            //This is a cleaner implementation opposed to multiple timers and this coroutine approach is actually what is used in Celeste :D
+            yield return null;
+        }
+
+        startTime = Time.time;
+
+        _isDashAttacking = false;
+
+        //Begins the "end" of our dash where we return some control to the player but still limit run acceleration (see Update() and Run())
+        SetGravityScale(Data.gravityScale);
+        RB.linearVelocity = Data.dashEndSpeed * dir.normalized;
+
+        while (Time.time - startTime <= Data.dashEndTime)
+        {
+            yield return null;
+        }
+
+        //Dash over
+        IsDashing = false;
+    }
+
+    //Short period before the player is able to dash again
+    private IEnumerator RefillDash(int amount)
+    {
+        //SHoet cooldown, so we can't constantly dash along the ground, again this is the implementation in Celeste, feel free to change it up
+        _dashRefilling = true;
+        yield return new WaitForSeconds(Data.dashRefillTime);
+        _dashRefilling = false;
+        _dashesLeft = Mathf.Min(Data.dashAmount, _dashesLeft + 1);
+    }
+    #endregion
+
     #region OTHER MOVEMENT METHODS
     private void Slide()
     {
@@ -419,6 +532,16 @@ public class PlayerMovement : MonoBehaviour
         else
             return false;
     }
+
+    private bool CanDash()
+    {
+        if (!IsDashing && _dashesLeft < Data.dashAmount && LastOnGroundTime > 0 && !_dashRefilling)
+        {
+            StartCoroutine(nameof(RefillDash), 1);
+        }
+
+        return _dashesLeft > 0;
+    }
     #endregion
 
 
@@ -432,6 +555,11 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireCube(_backWallCheckPoint.position, _wallCheckSize);
     }
     #endregion
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Touched object!");
+    }
 }
 
 // created by Dawnosaur :D
