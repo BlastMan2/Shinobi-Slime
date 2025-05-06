@@ -8,6 +8,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerData Data;
     public Animator animator;
+    public GameObject Health;
+    public GameObject Stamina;
+    private Slider staminaBar;
 
     #region Variables
     //Components
@@ -83,6 +87,9 @@ public class PlayerMovement : MonoBehaviour
     {
         SetGravityScale(Data.gravityScale);
         IsFacingRight = true;
+        staminaBar = Stamina.GetComponent<Slider>();
+        staminaBar.minValue = 0f;
+        staminaBar.maxValue = Data.dashRefillTime;
     }
 
     private void Update()
@@ -438,6 +445,7 @@ public class PlayerMovement : MonoBehaviour
         LastPressedDashTime = 0;
 
         float startTime = Time.time;
+        staminaBar.value = 0f;
 
         _dashesLeft--;
         _isDashAttacking = true;
@@ -473,12 +481,23 @@ public class PlayerMovement : MonoBehaviour
     //Short period before the player is able to dash again
     private IEnumerator RefillDash(int amount)
     {
-        //SHoet cooldown, so we can't constantly dash along the ground, again this is the implementation in Celeste, feel free to change it up
         _dashRefilling = true;
-        yield return new WaitForSeconds(Data.dashRefillTime);
+        float timer = 0f;
+
+        // Fill the bar over time
+        while (timer < Data.dashRefillTime)
+        {
+            timer += Time.deltaTime;
+            staminaBar.value = timer;
+            yield return null;
+        }
+
+        // Finish refill
+        staminaBar.value = Data.dashRefillTime;
         _dashRefilling = false;
-        _dashesLeft = Mathf.Min(Data.dashAmount, _dashesLeft + 1);
+        _dashesLeft = Mathf.Min(Data.dashAmount, _dashesLeft + amount);
     }
+
     #endregion
 
     #region OTHER MOVEMENT METHODS

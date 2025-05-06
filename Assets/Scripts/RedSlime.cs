@@ -8,6 +8,8 @@ using UnityEngine;
 public class RedSlime : MonoBehaviour
 {
     [SerializeField] private bool useParticles = true;
+    [SerializeField] private AudioClip slimeSound;
+    private AudioSource audioSource;
 
     private ParticleSystem ps;
     private ParticleSystem.EmissionModule em;
@@ -18,6 +20,7 @@ public class RedSlime : MonoBehaviour
 
     private void Start()
     {
+        // Center the AudioSource on the X and Y axis within the transform
         ps = GetComponentInChildren<ParticleSystem>(true);
         em = ps.emission;
         em.enabled = useParticles;
@@ -36,6 +39,8 @@ public class RedSlime : MonoBehaviour
         {
             playerOnPlatform = true;
             currentPlayer = collision.gameObject;
+            currentPlayer.GetComponent<PlayerMovement>().Health.GetComponent<HealthBar>().TakeDamage(1);
+
             Debug.Log("Player collided with Red Slime.");
         }
     }
@@ -59,7 +64,7 @@ public class RedSlime : MonoBehaviour
         particleColor.a = slimeColor.a;
         main.startColor = particleColor;
 
-        // Set Particle Size
+        // Set Particle System Size
         sm.scale = new Vector3(transform.localScale.x, sm.scale.y, sm.scale.z);
     }
 }

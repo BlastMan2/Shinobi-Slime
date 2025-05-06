@@ -1,10 +1,10 @@
 using UnityEngine;
 
-
 /** 
  * Blue Slime Platforms have the following functions:
  * - Provide a jump boost when the player jumps off of one.
  * - Emit particles when the player is on the platform.
+ * - Cause the player to glow while touching the slime (requires emissive material + Bloom).
  */
 public class BlueSlime : MonoBehaviour
 {
@@ -37,7 +37,7 @@ public class BlueSlime : MonoBehaviour
             if (rb != null)
             {
                 Debug.Log("Boosted Jump!");
-                rb.AddForce(Vector2.up * impulseForce, ForceMode2D.Impulse); 
+                rb.AddForce(Vector2.up * impulseForce, ForceMode2D.Impulse);
             }
         }
     }
@@ -49,8 +49,11 @@ public class BlueSlime : MonoBehaviour
             playerOnPlatform = true;
             currentPlayer = collision.gameObject;
             em.enabled = true;
+
+            EnablePlayerGlow(currentPlayer, slimeColor * 1.5f); // Apply glow
         }
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject == currentPlayer)
@@ -59,20 +62,39 @@ public class BlueSlime : MonoBehaviour
             currentPlayer = null;
 
             em.enabled = false;
-        }
 
+            DisablePlayerGlow(collision.gameObject); // Remove glow
+        }
     }
 
-    // Set the color of the slime's particles
     private void ConfigureParticleSystem(ParticleSystem ps, Color slimeColor)
     {
-        // Set Particle Color
         var main = ps.main;
         Color particleColor = slimeColor * 1.1f;
         particleColor.a = slimeColor.a;
         main.startColor = particleColor;
 
-        // Set Particle Size
         sm.scale = new Vector3(transform.localScale.x, sm.scale.y, sm.scale.z);
+    }
+
+    // === Emission Control ===
+    private void EnablePlayerGlow(GameObject player, Color emissionColor)
+    {
+        var renderer = player.GetComponent<SpriteRenderer>();
+        if (renderer != null && renderer.material.HasProperty("_EmissionColor"))
+        {
+            renderer.material.EnableKeyword("_EMISSION");
+            renderer.material.SetColor("_EmissionColor", emissionColor);
+        }
+    }
+
+    private void DisablePlayerGlow(GameObject player)
+    {
+        var renderer = player.GetComponent<SpriteRenderer>();
+        if (renderer != null && renderer.material.HasProperty("_EmissionColor"))
+        {
+            renderer.material.SetColor("_EmissionColor", Color.black);
+            renderer.material.DisableKeyword("_EMISSION");
+        }
     }
 }

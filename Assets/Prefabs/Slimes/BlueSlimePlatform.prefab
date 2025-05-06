@@ -92,6 +92,10 @@ PrefabInstance:
       propertyPath: m_AutoTiling
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1801500372262480771, guid: 3fe42846fb4bc414b84401e88f8f9532, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 15.18
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2450136067913298741, guid: 3fe42846fb4bc414b84401e88f8f9532, type: 3}
     m_RemovedGameObjects: []
