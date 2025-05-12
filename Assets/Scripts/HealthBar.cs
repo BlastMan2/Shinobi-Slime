@@ -70,12 +70,6 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    private void UpdateHealthUI()
-    {
-        HealthPoints.Last().GetComponent<Image>().color = new Color(1, 0, 0, 0.5f);
-        HealthPoints.Remove(HealthPoints.Last());
-    }
-
     public void SetMaxHealth(int health)
     {
         slider.maxValue = health;

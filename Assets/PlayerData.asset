@@ -44,10 +44,12 @@ MonoBehaviour:
   jumpInputBufferTime: 0.2
   dashAmount: 1
   dashSpeed: 40
-  dashSleepTime: 0.05
+  dashSleepTime: 0.1
   dashAttackTime: 0.15
   dashEndTime: 0.15
   dashEndSpeed: {x: 15, y: 15}
   dashEndRunLerp: 0.5
   dashRefillTime: 0.1
   dashInputBufferTime: 0.1
+  knockbackForce: 10
+  knockbackTotalTime: 0.1

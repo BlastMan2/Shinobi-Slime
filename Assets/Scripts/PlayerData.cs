@@ -76,6 +76,10 @@ public class PlayerData : ScriptableObject
     [Space(5)]
     [Range(0.01f, 0.5f)] public float dashInputBufferTime;
 
+    [Header("Knockback")]
+    public float knockbackForce; //Force applied to the player when they are knocked back
+    public float knockbackTotalTime; //Total time the player is knocked back for
+
     //Unity Callback, called when the inspector updates
     private void OnValidate()
     {

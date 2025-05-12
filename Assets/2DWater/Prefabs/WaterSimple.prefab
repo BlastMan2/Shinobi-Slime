@@ -56,8 +56,8 @@ MonoBehaviour:
   waveHeight: 0.25
   hasConstantWaves: 1
   waveAmplitude: 0.03
-  waveSpeed: 4
-  waveStep: 2
+  waveSpeed: 0.62
+  waveStep: -13
   numSprings: 20
   spacing: 1
   springConstant: 0.02

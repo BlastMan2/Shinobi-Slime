@@ -29,10 +29,6 @@ public class RedSlime : MonoBehaviour
         ConfigureParticleSystem(ps, slimeColor);
     }
 
-    private void Update()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

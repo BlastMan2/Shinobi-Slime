@@ -58,6 +58,13 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _lastDashDir;
     private bool _isDashAttacking;
 
+    // Knockback
+    private float _knockbackForce;
+    public float knockbackCounter;
+    private float _knockbackTotalTime;
+
+    public bool KnockFromRight;
+
     #region INPUT PARAMETERS
     private Vector2 _moveInput;
     public float LastPressedJumpTime { get; private set; }
@@ -90,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
         staminaBar = Stamina.GetComponent<Slider>();
         staminaBar.minValue = 0f;
         staminaBar.maxValue = Data.dashRefillTime;
+        _knockbackForce = Data.knockbackForce;
     }
 
     private void Update()
@@ -158,10 +166,13 @@ public class PlayerMovement : MonoBehaviour
             Sleep(Data.dashSleepTime);
 
             //If not direction pressed, dash forward
-            if (_moveInput != Vector2.zero)
-                _lastDashDir = _moveInput;
-            else
+            _lastDashDir = _moveInput;
+
+            if (_lastDashDir == Vector2.zero)
                 _lastDashDir = IsFacingRight ? Vector2.right : Vector2.left;
+
+            _lastDashDir.Normalize(); // ensures dash works even with small or zero input
+
 
 
 
@@ -266,6 +277,17 @@ public class PlayerMovement : MonoBehaviour
         {
             //Default gravity if standing on a platform or moving upwards
             SetGravityScale(Data.gravityScale);
+        }
+        // Knockback logic
+        if (knockbackCounter > 0)
+        {
+            if (KnockFromRight)
+                RB.linearVelocity = new Vector2(-_knockbackForce, _knockbackForce);
+            else
+                RB.linearVelocity = new Vector2(_knockbackForce, _knockbackForce);
+
+            knockbackCounter -= Time.deltaTime;
+            return; // prevents any other movement/updates while in knockback
         }
         #endregion
         animator.SetFloat("magnitude", RB.linearVelocity.magnitude);
