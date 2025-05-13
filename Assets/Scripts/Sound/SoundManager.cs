@@ -7,7 +7,8 @@ public enum SoundType
     HURT,
     FOOTSTEP,
     SLASH,
-    KUNAI
+    KUNAI,
+    COLLECTIBLE
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]

@@ -4,6 +4,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static Unity.Cinemachine.CinemachineFreeLookModifier;
 
@@ -42,7 +43,8 @@ public class HealthBar : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Game Over");
+            var currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
         }
         else
         {

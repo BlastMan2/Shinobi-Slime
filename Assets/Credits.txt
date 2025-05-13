@@ -4,4 +4,5 @@ Credits:
 - Water2D (Slime) Asset by Raycastly
 - Cave Tileset, Dark Hand, and Crystal Crab sprite by admurin.itch.io
 - Elemental Magic Spell Impact Outgoing SFX by Rescopic Sound on Pixabay
- 
+- SoundManager by Small Hedge Games
+- Pick Up SFX by Free Sound Community on Pixabay
