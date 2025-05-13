@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering;
 
 public class EnemyBehavior : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class EnemyBehavior : MonoBehaviour
     public int damage;
     public int enemyHealth;
     public float initialScale; // The initial scale of the enemy
+
+    // Cooldowns
+    private float damageCooldownTimer = 0f;
+    public float damageCooldownDuration = 1f;
 
     // Status
     public bool isInvincible;
@@ -73,12 +78,19 @@ public class EnemyBehavior : MonoBehaviour
                 }
             }
         }
+
+        // Decrement cooldown timer
+        if (damageCooldownTimer > 0f)
+        {
+            damageCooldownTimer -= Time.deltaTime;
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && damageCooldownTimer <= 0f)
         {
+            damageCooldownTimer = damageCooldownDuration;
             playerMovement.knockbackCounter = playerData.knockbackTotalTime;
             if (collision.transform.position.x <= transform.position.x)
             {
@@ -89,6 +101,8 @@ public class EnemyBehavior : MonoBehaviour
                 playerMovement.KnockFromRight = false;
             }
             playerHealth.TakeDamage(damage);
+            playerTransform.GetComponent<Animator>().SetTrigger("isDamaged");
+
             Debug.Log("Enemy collided with player and dealt damage.");
         }
     }

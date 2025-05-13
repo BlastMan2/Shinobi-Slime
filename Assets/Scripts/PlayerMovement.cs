@@ -7,6 +7,7 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     public bool IsJumping { get; private set; }
     public bool IsWallJumping { get; private set; }
 
+    public bool isFalling { get; private set; }
+
     public bool IsDashing { get; private set; }
     public bool IsSliding { get; private set; }
 
@@ -51,6 +54,10 @@ public class PlayerMovement : MonoBehaviour
     //Wall Jump
     private float _wallJumpStartTime;
     private int _lastWallJumpDir;
+
+    private HashSet<string> noWallJumpTags = new HashSet<string> { "BlackSlime" };
+    private int noWallJumpTagContactCount = 0;
+    private bool isTouchingNoWallJumpTag = false;
 
     //Dash
     private int _dashesLeft;
@@ -156,6 +163,14 @@ public class PlayerMovement : MonoBehaviour
 
             //Two checks needed for both left and right walls since whenever the play turns the wall checkPoints swap sides
             LastOnWallTime = Mathf.Max(LastOnWallLeftTime, LastOnWallRightTime);
+
+            // Stops player from clinging or jumping off of walls while isTouchingNoWallJumpTag is true
+            if (isTouchingNoWallJumpTag)
+            {
+                LastOnWallTime = 0;
+                LastOnWallLeftTime = 0;
+                LastOnWallRightTime = 0;
+            }
         }
         #endregion
 
@@ -290,7 +305,13 @@ public class PlayerMovement : MonoBehaviour
             return; // prevents any other movement/updates while in knockback
         }
         #endregion
+        isFalling = RB.linearVelocity.y < -0.1f && !IsWallJumping && !IsSliding && !IsDashing;
         animator.SetFloat("magnitude", RB.linearVelocity.magnitude);
+        animator.SetBool("isGrounded", LastOnGroundTime > 0f);
+        animator.SetBool("isJumping", IsJumping || IsWallJumping || _isJumpFalling);
+        animator.SetBool("isFalling", isFalling);
+
+
     }
 
     private void FixedUpdate()
@@ -330,7 +351,7 @@ public class PlayerMovement : MonoBehaviour
         RB.gravityScale = scale;
     }
 
-    private void Sleep(float duration)
+    public void Sleep(float duration)
     {
         //Method used so we don't need to call StartCoroutine everywhere
         //nameof() notation means we don't need to input a string directly.
@@ -552,8 +573,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool CanWallJump()
     {
-        return LastPressedJumpTime > 0 && LastOnWallTime > 0 && LastOnGroundTime <= 0 && (!IsWallJumping ||
-             (LastOnWallRightTime > 0 && _lastWallJumpDir == 1) || (LastOnWallLeftTime > 0 && _lastWallJumpDir == -1));
+        return LastPressedJumpTime > 0
+            && LastOnWallTime > 0
+            && LastOnGroundTime <= 0
+            && !isTouchingNoWallJumpTag
+            && (!IsWallJumping ||
+                 (LastOnWallRightTime > 0 && _lastWallJumpDir == 1) ||
+                 (LastOnWallLeftTime > 0 && _lastWallJumpDir == -1));
     }
 
     private bool CanJumpCut()
@@ -599,8 +625,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Touched object!");
+        if (noWallJumpTags.Contains(collision.tag))
+        {
+            noWallJumpTagContactCount++;
+            isTouchingNoWallJumpTag = true;
+        }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (noWallJumpTags.Contains(collision.tag))
+        {
+            noWallJumpTagContactCount = Mathf.Max(0, noWallJumpTagContactCount - 1);
+            if (noWallJumpTagContactCount == 0)
+                isTouchingNoWallJumpTag = false;
+        }
+    }
+
 }
 
 // created by Dawnosaur :D
