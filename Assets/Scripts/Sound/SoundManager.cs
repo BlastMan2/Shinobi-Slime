@@ -8,7 +8,9 @@ public enum SoundType
     FOOTSTEP,
     SLASH,
     KUNAI,
-    COLLECTIBLE
+    COLLECTIBLE,
+    BRIDGE_PLACE,
+    SHINOBI_SENSE
 }
 
 [RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
@@ -33,6 +35,20 @@ public class SoundManager : MonoBehaviour
         AudioClip[] clips = instance.soundList[(int)sound].Sounds; // Accessing Sounds from SoundList
         AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
         instance.audioSource.PlayOneShot(randomClip, volume); // Fixed PlayOneShot call
+    }
+
+    public static void PlaySoundSpecificIndex(SoundType sound, float volume = 1, int specificClipIndex = 0)
+    {
+        AudioClip[] clips = instance.soundList[(int)sound].Sounds; // Accessing Sounds from SoundList
+        if (specificClipIndex >= 0 && specificClipIndex < clips.Length)
+        {
+            AudioClip specificClip = clips[specificClipIndex];
+            instance.audioSource.PlayOneShot(specificClip, volume); // Fixed PlayOneShot call
+        }
+        else
+        {
+            Debug.LogWarning($"SoundManager: Invalid clip index {specificClipIndex} for sound type {sound}.");
+        }
     }
 
 #if UNITY_EDITOR

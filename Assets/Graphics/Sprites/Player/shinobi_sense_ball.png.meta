@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,6 +121,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,12 +141,12 @@ TextureImporter:
       name: shinobi_sense_ball_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,20 +163,20 @@ TextureImporter:
       name: shinobi_sense_ball_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 38
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73cdd14a7e3704360800000000000000
-      internalID: 7151843646992407607
+      spriteID: 3522a03593a0f3349a370df83518c38c
+      internalID: 2002069696
       vertices: []
       indices: 
       edges: []
@@ -172,20 +185,20 @@ TextureImporter:
       name: shinobi_sense_ball_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 37
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b347585fa6bf90110800000000000000
-      internalID: 1227788810239439931
+      spriteID: 92abb009962d6bc43a38388f90112918
+      internalID: 418509610
       vertices: []
       indices: 
       edges: []
@@ -194,20 +207,20 @@ TextureImporter:
       name: shinobi_sense_ball_3
       rect:
         serializedVersion: 2
-        x: 9
-        y: 6
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db1fb8bb5e19d37a0800000000000000
-      internalID: -6395795479916187203
+      spriteID: 625c13f68283a27449054ad1eaabff96
+      internalID: -392443268
       vertices: []
       indices: 
       edges: []
@@ -216,20 +229,20 @@ TextureImporter:
       name: shinobi_sense_ball_4
       rect:
         serializedVersion: 2
-        x: 41
-        y: 6
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 553876d21890f59a0800000000000000
-      internalID: -6242260108095028395
+      spriteID: c3f5d694c3cfeae44ab8d74f3a3cb4c3
+      internalID: 414012007
       vertices: []
       indices: 
       edges: []
@@ -238,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 10ec16cc3118b84409515a4e935a5478
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shinobi_sense_ball_0: 3606221171026183250
+      shinobi_sense_ball_1: 2002069696
+      shinobi_sense_ball_2: 418509610
+      shinobi_sense_ball_3: -392443268
+      shinobi_sense_ball_4: 414012007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
