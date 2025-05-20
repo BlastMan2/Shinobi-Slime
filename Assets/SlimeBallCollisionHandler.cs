@@ -43,7 +43,15 @@ public class SlimeBallCollisionHandler : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+/*    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collisionEnabled) return;
+        if (shinobiSense != null)
+        {
+            shinobiSense.DeactivateSlimeBall();
+        }
+    }*/
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (!collisionEnabled) return;
         if (shinobiSense != null)
@@ -52,12 +60,12 @@ public class SlimeBallCollisionHandler : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+/*    void OnTriggerEnter2D(Collider2D other)
     {
         if (!collisionEnabled) return;
         if (shinobiSense != null)
         {
             shinobiSense.DeactivateSlimeBall();
         }
-    }
+    }*/
 }

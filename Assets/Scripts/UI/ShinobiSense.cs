@@ -1,7 +1,8 @@
-using Unity.Cinemachine;
+﻿using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class ShinobiSense : MonoBehaviour
 {
@@ -9,10 +10,6 @@ public class ShinobiSense : MonoBehaviour
     public GameObject player; // Reference to the player GameObject
     private PlayerMovement playerMovement;
     public CinemachineCamera cmCamera; // Assign this in the inspector
-    public Vector2 startupForce // The force applied to the SlimeBall at startup
-    {
-        get { return new Vector2(0f, 0.4f); }
-    }
 
     public bool slimeBallActive = false;
 
@@ -29,6 +26,15 @@ public class ShinobiSense : MonoBehaviour
     private float mainLightStartingIntensity; // Starting intensity of the main light
     private Color mainLightStartingColor; // Starting color of the main light
 
+    [Header("Shinobi Sense UI")]
+    public GameObject flashImage;
+    private Animator flashAnimator;
+    public GameObject shadowImage;
+
+    [Header("Shinobi Sense Audio")]
+    public AudioClip shinobiSenseAmbientSound; // Plays while Shinobi Sense is active
+    private AudioSource audioSource; // Reference to the AudioSource component
+
 
     void Awake()
     {
@@ -37,6 +43,8 @@ public class ShinobiSense : MonoBehaviour
         mainLightStartingColor = mainLight.color;
         slimeBall.SetActive(false); // Deactivate the SlimeBall at the start
         playerMovement = player.GetComponent<PlayerMovement>();
+        flashAnimator = flashImage.GetComponent<Animator>();
+        audioSource = slimeBall.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -59,15 +67,17 @@ public class ShinobiSense : MonoBehaviour
                 1f / slimeSmoothness,
                 slimeMoveSpeed
             );
+            slimeBall.transform.position = mouseCursorPos;
         }
         else
         {
-            transform.position = mouseCursorPos;
+            
         }
     }
 
     void TriggerShinobiSense()
     {
+        flashAnimator.SetTrigger("flash"); // Trigger the flash animation
         if (!slimeBallActive)
             ActivateSlimeBall();
         else
@@ -77,12 +87,14 @@ public class ShinobiSense : MonoBehaviour
     void ActivateSlimeBall()
     {
         playerMovement.enabled = false; // Disable player movement
+        //shadowImage.GetComponentInChildren<Image>().enabled = true; // Put a shadow overlay
+        player.GetComponentInChildren<Light2D>().enabled = false; // Disable the player's light
+        audioSource.Play(); // Play the ambient sound
         SoundManager.PlaySoundSpecificIndex(SoundType.SHINOBI_SENSE, 0.5f, 0); // Play sound effect
         mainLight.intensity = shinobiSenseIntensity;
         mainLight.color = shinobiSenseColor; // Change the light color to Shinobi Sense color
         slimeBall.SetActive(true);
-        slimeBall.transform.position = new Vector3(player.transform.position.x, player.transform.position.y+1, player.transform.position.z);
-        slimeBall.GetComponent<Rigidbody2D>().AddForce(startupForce, ForceMode2D.Impulse);
+        //slimeBall.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.lockState = CursorLockMode.None;
         slimeBallActive = true;
@@ -96,10 +108,13 @@ public class ShinobiSense : MonoBehaviour
     public void DeactivateSlimeBall()
     {
         playerMovement.enabled = true; // Re-enable player movement
+        //shadowImage.GetComponentInChildren<Image>().enabled = false; // Get rid of shadow overlay
+        player.GetComponentInChildren<Light2D>().enabled = true; // Disable the player's light
         SoundManager.PlaySoundSpecificIndex(SoundType.SHINOBI_SENSE, 0.5f, 1); // Play sound effect
         mainLight.intensity = mainLightStartingIntensity;
         mainLight.color = mainLightStartingColor; // Change the light color to Shinobi Sense color
-
+        audioSource.Stop();
+        slimeBall.transform.position = this.transform.position;
         slimeBall.SetActive(false);
         slimeBallActive = false;
 

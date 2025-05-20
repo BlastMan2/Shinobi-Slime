@@ -44,7 +44,7 @@ public class PurpleSlime : MonoBehaviour
             currentPlayer = collision.gameObject;
             em.enabled = true;
 
-            EnablePlayerGlow(currentPlayer, slimeColor * 1.5f); // Apply glow
+            //EnablePlayerGlow(currentPlayer, slimeColor * 1.5f); // Apply glow
         }
     }
 
@@ -57,7 +57,7 @@ public class PurpleSlime : MonoBehaviour
 
             em.enabled = false;
 
-            DisablePlayerGlow(collision.gameObject); // Remove glow
+            //DisablePlayerGlow(collision.gameObject); // Remove glow
         }
     }
 

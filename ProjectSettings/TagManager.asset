@@ -11,6 +11,7 @@ TagManager:
   - PurpleSlime
   - OrangeSlime
   - Enemy
+  - ShinobiSense
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Ground
   - Wall
   - Glow
-  - 
+  - OrangeSlime
   - 
   - 
   - 

@@ -10,10 +10,14 @@ public class Bridge_Placer : MonoBehaviour
     public bool bridgeActive; // Is the bridge active?
     private float timeBetweenPlacements = 0.2f; // Time between each bridge placement
     private SpriteRenderer sp;
+    private BoxCollider2D bc;
 
     private void Start()
     {
         sp = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
+        sp.enabled = false;
+        bc.enabled = false;
     }
 
     public void SwitchMethod() // Function to be used by the Switch Object
@@ -24,6 +28,8 @@ public class Bridge_Placer : MonoBehaviour
     private void PlaceBridge()
     {
         StartCoroutine(PlaceBridgeCoroutine());
+        bc.enabled = true; // Enable the collider when the bridge is active
+        sp.enabled = true;
     }
 
     private IEnumerator PlaceBridgeCoroutine()
