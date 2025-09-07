@@ -2,19 +2,27 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - RedSlime
+  - BlueSlime
+  - BlackSlime
+  - YellowSlime
+  - PurpleSlime
+  - OrangeSlime
+  - Enemy
+  - ShinobiSense
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Parallax
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Wall
+  - Glow
+  - OrangeSlime
   - 
   - 
   - 
@@ -41,3 +49,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Parallax
+    uniqueID: 9384013
+    locked: 0
+  - name: Background
+    uniqueID: 704315175
+    locked: 0
+  - name: ActiveGround
+    uniqueID: 2033243281
+    locked: 0
+  - name: Foreground
+    uniqueID: 2317660663
+    locked: 0
+  m_RenderingLayers:
+  - Default
